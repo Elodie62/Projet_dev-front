@@ -5,7 +5,6 @@
 
 body {
   background-color: black;
- 
 }
 
 /* Navbar*/
@@ -36,8 +35,8 @@ a {
   font-family: "get_schwifty";
 }
 
-nav a:hover{
-    color:#96d0ec; 
+nav a:hover {
+  color: #96d0ec;
 }
 
 /**/
@@ -80,8 +79,5 @@ footer {
 }
 
 .sites a:hover {
-  color:#96d0ec;
-}
-
-
+  color: #96d0ec;
 }
