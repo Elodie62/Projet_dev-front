@@ -1,3 +1,87 @@
+@font-face {
+  font-family: "get_schwifty";
+  src: url(../font/get_schwifty.ttf) format("truetype");
+}
+
 body {
-    background-color: blanchedalmond;
+  background-color: black;
+ 
+}
+
+/* Navbar*/
+header {
+  text-align: center;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+nav {
+  border-bottom: 2px white solid;
+  padding-bottom: 5px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "get_schwifty";
+}
+
+nav a:hover{
+    color:#96d0ec; 
+}
+
+/**/
+
+.home {
+  display: flex;
+  align-items: center;
+}
+
+.rick {
+  width: 300px;
+  height: auto;
+  float: left;
+}
+
+.presentation {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  height: auto;
+  border-top: 2px white solid;
+}
+
+.sites i {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.sites a {
+  color: white;
+  font-size: 2em;
+}
+
+.sites a:hover {
+  color:#96d0ec;
+}
+
+
 }
