@@ -3,20 +3,18 @@
   src: url(../font/get_schwifty.ttf) format("truetype");
 }
 
-@font-face{
+@font-face {
   font-family: "roboto-regular";
   src: url(../font/roboto-regular.ttf) format("truetype");
 }
 
-@font-face{
+@font-face {
   font-family: "permanantmarker";
   src: url(../font/permanentmarker.ttf) format("truetype");
 }
 
-
 body {
   background-color: black;
-  
 }
 
 /* Navbar*/
@@ -94,17 +92,12 @@ footer {
   color: #96d0ec;
 }
 
-
 /* Pages personnages */
 
 .titreperso {
   text-align: center;
   color: #96d0ec;
-  text-shadow:
-  0 0 2px black,
-  0 0 5px greenyellow,
-  0 0 10px greenyellow,
-  0 0 20px greenyellow;
+  text-shadow: 0 0 2px black, 0 0 5px greenyellow, 0 0 10px greenyellow, 0 0 20px greenyellow;
   font-family: "get_schwifty";
   font-size: 40px;
 }
@@ -117,14 +110,14 @@ footer {
   width: 200px;
   padding: 10px;
   box-shadow: 7px 7px 20px greenyellow;
-  border-radius: 5px; 
+  border-radius: 5px;
   margin: 25px;
   background-color: rgba(255, 255, 255);
   cursor: pointer;
   display: inline-block;
 }
 
-.card_img{
+.card_img {
   width: 100%;
   border-radius: 5px;
 }
@@ -132,7 +125,7 @@ footer {
 .h2_card {
   margin: 10px 70px;
   font-family: permanantmarker;
-  color : #96d0ec;
+  color: #96d0ec;
   text-shadow: 0 0 3px black;
 }
 
@@ -140,4 +133,3 @@ footer {
   font-family: roboto-regular;
   text-align: center;
 }
-
