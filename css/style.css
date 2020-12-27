@@ -81,3 +81,35 @@ footer {
 .sites a:hover {
   color: #96d0ec;
 }
+
+/* Page histoire */
+.nbEpisodes {
+  color: white;
+  margin-bottom: 50px;
+}
+
+.saison {
+  color: white;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.saison::-webkit-details-marker {
+  color: #fafe6c;
+  font-size: 20px;
+}
+
+.episode {
+  color: white;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.episode::-webkit-details-marker {
+  color: #00afc7;
+  font-size: 15px;
+}
+
+details {
+  color: white;
+}
