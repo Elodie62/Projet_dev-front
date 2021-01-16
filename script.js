@@ -317,6 +317,10 @@ $(".season button").click(function () {
   }
 });
 
+$(document).ready(function () {
+  $("#slideout").hide();
+});
+
 function createEpisodeElement(episode) {
   const newLi = document.createElement("li");
   newLi.classList.add("episode");
