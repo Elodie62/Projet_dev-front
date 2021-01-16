@@ -1,0 +1,46 @@
+/* Navbar*/
+header {
+  text-align: center;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+nav {
+  border-bottom: 2px white solid;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.portal {
+  position: relative;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "get_schwifty";
+  padding: 10px;
+  font-size: 20px;
+}
+
+nav .portal:hover {
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
+}
+
+.portal:hover::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  background: url(https://media2.giphy.com/media/i2tLw5ZyikSFdkeGHT/giphy.gif) center / 20px 100% no-repeat;
+  width: 20px;
+  height: 100%;
+}
