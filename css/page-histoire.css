@@ -1,0 +1,71 @@
+/* Page histoire */
+.nbEpisodes {
+  color: white;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.season {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin: 60px 0;
+}
+
+.posterSeason {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  border: 3px solid black;
+  margin: 4px;
+}
+
+.season button {
+  padding: 6px;
+  background-color: white;
+}
+
+#slideout {
+  display: flex;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.6) inset;
+}
+
+#slideout .seasonNumber {
+  text-align: center;
+  font-size: 28px;
+  color: #e54b4b;
+}
+
+#slideout .episodeNumber {
+  text-align: center;
+  font-size: 22px;
+  color: #fca311;
+}
+#slideout .seasonImg {
+  width: 400px;
+  align-self: center;
+}
+#slideout .list {
+  height: 400px;
+  overflow: scroll;
+}
+
+#slideout div {
+  width: 60%;
+}
+
+#slideout .episode {
+  list-style-type: none;
+}
+
+#slideout .header {
+  margin-top: 30px;
+}
+
+#slideout .header,
+#slideout .title {
+  text-align: left;
+  color: #00b0c7;
+}
