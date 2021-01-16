@@ -9,7 +9,8 @@
 }
 
 body {
-  background-color: black;
+  background-color: hsl(267deg 71% 10%);
+  margin: 0;
 }
 
 /* Navbar*/
@@ -34,7 +35,7 @@ ul {
   padding: 0;
 }
 
-a {
+.portal {
   position: relative;
   color: white;
   display: inline-block;
@@ -44,12 +45,12 @@ a {
   font-size: 20px;
 }
 
-nav a:hover {
+nav .portal:hover {
   color: var(--text-color);
   text-shadow: var(--text-shadow);
 }
 
-a:hover::before {
+.portal:hover::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -109,55 +110,67 @@ footer {
   text-align: center;
 }
 
-.saison {
+.season {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin: 60px 0;
+}
+
+.posterSeason {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  border: 3px solid black;
+  margin: 4px;
+}
+
+.season button {
+  padding: 6px;
+  background-color: white;
+}
+
+#slideout {
+  display: flex;
+  overflow: hidden;
   color: white;
-  margin-bottom: 30px;
-  margin-left: 20px;
-  font-size: 18px;
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.6) inset;
 }
 
-.saison::-webkit-details-marker {
-  color: #fafe6c;
-  font-size: 20px;
-  display: none;
-  vertical-align: middle;
+#slideout .seasonNumber {
+  text-align: center;
+  font-size: 28px;
+  color: #e54b4b;
 }
 
-.saison::before {
-  content: url(../img/rickpuce.png);
-  vertical-align: middle;
-  margin-right: 30px;
+#slideout .episodeNumber {
+  text-align: center;
+  font-size: 22px;
+  color: #fca311;
+}
+#slideout .seasonImg {
+  width: 400px;
+  align-self: center;
+}
+#slideout .list {
+  height: 400px;
+  overflow: scroll;
 }
 
-.episode {
-  color: white;
-  font-size: 16px;
-  margin-left: 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+#slideout div {
+  width: 60%;
+}
+
+#slideout .episode {
   list-style-type: none;
 }
 
-.episode::-webkit-details-marker {
-  display: none;
-  color: #00afc7;
-  font-size: 15px;
+#slideout .header {
+  margin-top: 30px;
 }
 
-.episode::before {
-  content: url(../img/mortypuce.png);
-  vertical-align: middle;
-  margin-right: 30px;
-}
-
-.resume {
-  color: white;
-  margin-left: 50px;
-  font-size: 14px;
-}
-details[open] > .episode {
-  background-color: teal;
-}
-details[open] > .resume {
-  background-color: gray;
+#slideout .header,
+#slideout .title {
+  text-align: left;
+  color: #00b0c7;
 }
