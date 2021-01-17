@@ -1,0 +1,17 @@
+.home {
+  display: flex;
+  align-items: center;
+}
+
+.rick {
+  width: 300px;
+  height: auto;
+  float: left;
+}
+
+.presentation {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  margin-right: 5px;
+}

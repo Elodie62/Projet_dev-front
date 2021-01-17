@@ -1,0 +1,21 @@
+footer {
+  text-align: center;
+  height: auto;
+  border-top: 2px white solid;
+}
+
+.sites i {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.sites a {
+  color: white;
+  font-size: 2em;
+}
+
+.sites a:hover {
+  color: #96d0ec;
+}

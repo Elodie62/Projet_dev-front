@@ -1,4 +1,3 @@
-
 @font-face{
   font-family: "roboto-regular";
   src: url(../font/roboto-regular.ttf) format("truetype");
@@ -9,7 +8,7 @@
   src: url(../font/permanentmarker.ttf) format("truetype");
 }
 
-
+=======
 :root {
   --text-color: #96d0ec;
   --text-shadow: 0 0 3px #7fb248, 0 0 3px #7fb248, 0 0 3px #7fb248, 0 0 3px #7fb248;
@@ -20,12 +19,9 @@
   src: url(../font/get_schwifty.ttf) format("truetype");
 }
 
+
 body {
   background-color: hsl(267deg 71% 10%);
   margin: 0;
 }
-
-
-
-
 
