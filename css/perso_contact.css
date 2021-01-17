@@ -1,7 +1,3 @@
-
-
-/* Pages personnages */
-
 h1 {
   text-align: center;
   color: #96d0ec;
@@ -14,11 +10,15 @@ h1 {
   font-size: 40px;
   margin: 70px;
 }
-  
+
+
+/* Pages personnages */
+
 .perso {
   margin: 50px 60px 50px 60px;
 }
-  
+
+/*Card avec les personnages dessus*/
 .card {
   width: 200px;
   padding: 10px;
@@ -30,11 +30,12 @@ h1 {
   display: inline-block;
 }
 
+/*Image du personnage dans la card*/
 .card_img{
   width: 100%;
   border-radius: 5px;
 }
-  
+
 .h2_card {
   margin: 10px 70px;
   font-family: permanantmarker;
