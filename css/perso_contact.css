@@ -1,21 +1,17 @@
 h1 {
   text-align: center;
   color: #96d0ec;
-  text-shadow:
-  0 0 2px black,
-  0 0 5px greenyellow,
-  0 0 10px greenyellow,
-  0 0 20px greenyellow;
+  text-shadow: 0 0 2px black, 0 0 5px greenyellow, 0 0 10px greenyellow,
+    0 0 20px greenyellow;
   font-family: "get_schwifty";
   font-size: 40px;
   margin: 70px;
 }
 
-
 /* Pages personnages */
 
 .perso {
-  margin: 50px 60px 50px 60px;
+  text-align: center;
 }
 
 /*Card avec les personnages dessus*/
@@ -23,7 +19,7 @@ h1 {
   width: 200px;
   padding: 10px;
   box-shadow: 7px 7px 20px greenyellow;
-  border-radius: 5px; 
+  border-radius: 5px;
   margin: 25px;
   background-color: rgba(255, 255, 255);
   cursor: pointer;
@@ -31,7 +27,7 @@ h1 {
 }
 
 /*Image du personnage dans la card*/
-.card_img{
+.card_img {
   width: 100%;
   border-radius: 5px;
 }
@@ -39,41 +35,37 @@ h1 {
 .h2_card {
   margin: 10px 70px;
   font-family: permanantmarker;
-  color : #96d0ec;
+  color: #96d0ec;
   text-shadow: 0 0 3px black;
 }
-  
+
 .card_p {
   font-family: roboto-regular;
   text-align: center;
 }
 
-
 @media screen and (max-width: 600px) {
   .card {
-    width: 200px ;
+    width: 200px;
     margin: 20px 0;
   }
 
-  h1{
+  h1 {
     font-size: 30px;
     margin: 50px auto;
   }
 }
 
-
-
-
 /*PAGE CONTACTS*/
 
-.coordonnee{
+.coordonnee {
   margin: 30px 60px 0px 150px;
   width: 30%;
   height: auto;
   display: inline-block;
 }
-  
-.info{
+
+.info {
   width: 100%;
   height: auto;
   padding: 40px;
@@ -81,62 +73,59 @@ h1 {
   text-align: center;
   font-size: 20px;
   font-family: sans-serif;
-
 }
-  
-.info_img{
+
+.info_img {
   width: 10%;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 
-.info_txt{
+.info_txt {
   font-size: 17px;
 }
-  
-.com_txt{
+
+.com_txt {
   color: #91f745;
   font-size: 20px;
   font-family: sans-serif;
 }
-  
-.titre_contact{
+
+.titre_contact {
   color: white;
 }
-  
-  
+
 .formu {
   margin: 30px;
   display: block;
   font-size: 15px;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0 0 10px  rgba(0, 0, 0, 0.1)inset;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
   outline: none;
   width: 90%;
   height: auto;
 }
 
-.submit{
-  background-color: #B6DDFC;
+.submit {
+  background-color: #b6ddfc;
   width: 70%;
   height: auto;
   cursor: pointer;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
-.submit:hover{
-  background-color:#79c3ff ;
+.submit:hover {
+  background-color: #79c3ff;
 }
 
-
-.com{
+.com {
   width: 120%;
-  height: auto;    
+  height: auto;
 }
-  
-.commentaire{
+
+.commentaire {
   display: inline-block;
   margin: 0 50px 0 150px;
 }
@@ -147,57 +136,52 @@ h1 {
     margin: 0;
   }
 
-  .info{
+  .info {
     width: 190px;
     margin: auto;
   }
 
-  .info_img{
+  .info_img {
     width: 40px;
   }
 
-  .coordonnee{
+  .coordonnee {
     width: 100%;
     margin: auto;
   }
 
-  .commentaire{
+  .commentaire {
     width: 100%;
     margin: auto;
   }
 
-  .com_txt{
+  .com_txt {
     font-size: 17px;
     width: 100%;
     margin: 20px auto 30px auto;
     text-align: center;
-
   }
 
-  .formu{
+  .formu {
     width: 60%;
     margin: 10px auto 10px;
   }
 
-  .com{
+  .com {
     width: 80%;
   }
 
-  .submit{
+  .submit {
     width: 50%;
     margin: auto;
   }
 }
 
-
-
-
 /*PAGE GALERIE*/
 
-.galerie{
-  margin: 0 10% 80px;
+.galerie {
+  text-align: center;
 }
-
 
 .gal {
   width: auto;
@@ -205,13 +189,13 @@ h1 {
   cursor: pointer;
   display: inline-block;
 }
-    
-.gal_img{
+
+.gal_img {
   width: auto;
   height: 300px;
 }
 
-.ligne{
+.ligne {
   width: 90%;
   margin: auto;
 }
@@ -226,6 +210,7 @@ h1 {
 .overlay-image .text {
   color: #fff;
   font-size: 30px;
+  font-family: "get_schwifty";
   line-height: 1.5em;
   text-shadow: 2px 2px 2px #000;
   position: absolute;
@@ -236,59 +221,49 @@ h1 {
   width: 100%;
 }
 
-.overlay-image .hover{
+.overlay-image .hover {
   position: absolute;
   top: 0;
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
-.overlay-image .gal_img{
+.overlay-image .gal_img {
   opacity: 1;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
-.overlay-image:hover .hover{
+.overlay-image:hover .hover {
   opacity: 1;
 }
 
-.overlay-image:hover .gal_img{
+.overlay-image:hover .gal_img {
   opacity: 0.5;
 }
 
 @media screen and (max-width: 600px) {
-  
-  .galerie{
+  .galerie {
     width: 100%;
   }
 
-  .gal_img{
+  .gal_img {
     width: 100%;
     height: auto;
   }
 
-  .gal{
+  .gal {
     width: 70%;
     height: auto;
     margin: auto;
   }
 
-  .overlay-image .text{
+  .overlay-image .text {
     font-size: 0;
   }
 
-  .overlay-image:hover .gal_img{
+  .overlay-image:hover .gal_img {
     opacity: 1;
   }
-
 }
-
-
-
-
-
-
-
-  
