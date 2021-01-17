@@ -1,3 +1,5 @@
+/*Déclaration d'objet saison et épisodes pour pouvoir les appeler et les afficher dans l'html quand on va cliquer sur le bouton*/
+
 const saisons = [
   {
     id: 1,
@@ -289,38 +291,45 @@ let detailsOpened = false;
 let lastSelectedSaisonId = -1;
 let selectedSaisonId = -1;
 
+//Quand on clique sur le bouton, l'order est égal à l'order du bouton +1
 $(".season button").click(function () {
+  $("#slideout").css("order", Number($(this).css("order")) + 1); // Order du slideout = order du bouton + 1
+
   lastSelectedSaisonId = selectedSaisonId;
   selectedSaisonId = $(this).data("id");
   const selectedSaison = saisons.find(function (saison) {
     return saison.id == selectedSaisonId;
   });
 
+  // On ajoute le titre, le nombre d'épisode et l'image correspondant à la saison sélectionnée
   $("#slideout h1").text(selectedSaison.titre);
   $("#slideout h2").text(selectedSaison.nombreEpisode);
   $("#slideout img").attr("src", selectedSaison.image);
 
   $("#slideout ol").empty();
+  /* Pour chaque épisode de la saison selectionnée, on appelle la fonction createEpisodeElement puis on l'ajoute dans la liste ordonnée*/
   for (const episode of selectedSaison.episodes) {
     const episodeEl = createEpisodeElement(episode);
     $("#slideout ol").append(episodeEl);
   }
 
+  /*
+   * si le slideout est fermé, il va s'ouvrir doucement
+   * sinon si on reclique sur la saison déjà selectionnée il se ferme
+   */
   if (!detailsOpened) {
     $("#slideout").slideDown("slow");
     detailsOpened = true;
-  } else {
-    if (selectedSaisonId == lastSelectedSaisonId) {
-      $("#slideout").slideUp();
-      detailsOpened = false;
-    }
+  } else if (selectedSaisonId == lastSelectedSaisonId) {
+    $("#slideout").slideUp();
+    detailsOpened = false;
   }
 });
 
-$(document).ready(function () {
-  $("#slideout").hide();
-});
-
+/*
+ * Cette fonction regroupe toutes les créations d'éléments html, leur classe et on ajoute dans le p le résumé,
+ * dans le h1 le titre de l'épisode et dans le span le numéro de l'épisode
+ */
 function createEpisodeElement(episode) {
   const newLi = document.createElement("li");
   newLi.classList.add("episode");
@@ -349,3 +358,30 @@ function createEpisodeElement(episode) {
   newLi.appendChild(episodeEl);
   return newLi;
 }
+
+/* Affecte un order à chaque item dans le but de de pouvoir permettre le placement du slideout entre chaque ligne*/
+function order() {
+  const flex = Array.from(document.querySelector(".season").children);
+  const baseOffset = flex[0].offsetTop;
+  const breakIndex = flex.findIndex((item) => item.offsetTop > baseOffset);
+  const numPerRow = breakIndex === -1 ? flex.length : breakIndex;
+
+  let order = 0;
+  flex.forEach(function (flexItem, index) {
+    if (index > 0 && index % numPerRow == 0) {
+      order = order + 2;
+    }
+    flexItem.style.order = order;
+  });
+}
+
+/* Permet de reset l'order quand on change la taille de la page*/
+$(window).resize(function () {
+  order();
+});
+
+//mets order par defaut
+order();
+
+/*Permet de cacher le slideout quand on arrive sur la page*/
+$("#slideout").hide();

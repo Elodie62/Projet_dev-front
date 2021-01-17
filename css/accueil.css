@@ -1,6 +1,8 @@
 .home {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin: 0 20%;
 }
 
 .rick {
@@ -11,7 +13,35 @@
 
 .presentation {
   color: white;
-  text-align: center;
+  text-align: justify;
   font-size: 18px;
   margin-right: 5px;
+  line-height: 1.5;
+}
+
+.discover {
+  background-color: #b6ddfc;
+  color: black;
+  width: fit-content;
+  cursor: pointer;
+  transition: 0.5s ease;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.discover:hover {
+  background-color: #79c3ff;
+}
+
+@media (max-width: 780px) {
+  .home {
+    flex-direction: column;
+    margin: 0 30px;
+  }
+
+  .rick {
+    width: 230px;
+  }
 }

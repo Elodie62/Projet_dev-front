@@ -1,14 +1,15 @@
-/* Page histoire */
 .nbEpisodes {
   color: white;
   margin-bottom: 50px;
   text-align: center;
+  font-size: 20px;
 }
 
 .season {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 50px;
   margin: 60px 0;
 }
 
@@ -27,6 +28,7 @@
 
 #slideout {
   display: flex;
+  gap: 50px;
   overflow: hidden;
   color: white;
   box-shadow: 0 0 20px rgba(128, 128, 128, 0.6) inset;
@@ -47,9 +49,15 @@
   width: 400px;
   align-self: center;
 }
+
 #slideout .list {
   height: 400px;
   overflow: scroll;
+  scrollbar-width: none;
+}
+
+#slideout .list::-webkit-scrollbar {
+  display: none;
 }
 
 #slideout div {
@@ -68,4 +76,15 @@
 #slideout .title {
   text-align: left;
   color: #00b0c7;
+}
+
+@media (max-width: 780px) {
+  #slideout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #slideout div {
+    width: 90%;
+  }
 }

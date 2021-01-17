@@ -1,6 +1,7 @@
 :root {
   --text-color: #96d0ec;
-  --text-shadow: 0 0 3px #7fb248, 0 0 3px #7fb248, 0 0 3px #7fb248, 0 0 3px #7fb248;
+  --text-shadow: 0 0 3px #7fb248, 0 0 3px #7fb248, 0 0 3px #7fb248,
+    0 0 3px #7fb248;
 }
 
 @font-face {
@@ -11,4 +12,5 @@
 body {
   background-color: hsl(267deg 71% 10%);
   margin: 0;
+  font-family: sans-serif;
 }
